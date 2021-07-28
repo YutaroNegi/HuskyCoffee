@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Husky Coffe</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div id="menuMainContainer">
+        <div id="menuContainer" class="text-center">
+            <div class="d-flex flex-column">
+
+
+                <img class="ml-auto mr-auto mt-4" src="./assets/husky-siberiano.png" width="50px">
+                <h1 class="mb-4">Husky Coffe</h1>
+
+                <div id="dripCoffee" class="m-4 ">
+                    <img src="./assets/coffee-cup.png" width="100px">
+                    <h2>Drip Coffee</h2>
+                    <h4 id="dripCoffePriceDisplay"></h4>
+                    <input id="dripCoffeeValue" class="text-center" value="0" type="number" min="0">
+                </div>
+                <div id="iceCoffee" class="m-4">
+                    <img src="./assets/ice-coffee.png" width="100px">
+                    <h2>Ice Coffee</h2>
+                    <h4 id="iceCoffePriceDisplay"></h4>
+                    <input id="iceCoffeeValue" class="text-center" value="0" type="number" min="0">
+                </div>
+                <div id="cookie" class="m-4">
+                    <img src="./assets/cookies.png" width="100px">
+                    <h2>Cookie</h2>
+                    <h4 id="cookiePriceDisplay"></h4>
+                    <input id="cookieValue" class="text-center" value="0" type="number" min="0">
+                </div>
+                <div id="cake" class="m-4">
+                    <img src="./assets/cake.png" width="100px">
+                    <h2>Cake</h2>
+                    <h4 id="cakePriceDisplay"></h4>
+                    <input id="cakeValue" class="text-center" value="0" type="number" min="0">
+                </div>
+            </div>
+            <div id="menuBtn" class="d-flex flex-column m-auto mt-4">
+                <button id="checkoutBtn" class="rounded mt-4 p-2">CHECKOUT</button>
+                <form action="./index.html"><button id="backIndexBtn" class="rounded mt-4 mb-4 p-2">GO BACK</button></form>
+                
+            </div>
+        </div>
+
+        <div id="dimScreen" class="d-none">
+            <div id="warningName" class="d-none bg-white text-center flex-column justify-content-center">
+                <h1>You need to fill the input!</h1>
+        
+        
+                <button id="okBtn" class="rounded ml-auto m-auto">OK!</button>
+            </div>
+        </div>
+
+
+
+
+
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="./firebase.js"></script>
+        <script src="./script.js"></script>
+</body>
+
+</html>

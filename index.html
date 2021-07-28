@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Husky Coffe</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="homeMainContainer" class="d-flex flex-column justify-content-around text-center">
+
+        <div id="homeHeaderContainer" class="">
+            <img class="" src="./assets/husky-siberiano.png" width="50px">
+            <h1>Husky Coffee</h1>
+        </div>
+
+
+        <div id="userNameFiled" class="m-4 d-flex flex-column ml-auto mr-auto">
+            <input id="userName" class="rounded text-center mb-4 p-2" type="text" placeholder="Name">
+            <button id="userNameBtn" class="rounded p-2">Go</button>
+        </div>
+
+
+        <div id="socialMedia" class="">
+            <a href=""><img class="m-4" src="./assets/facebook.png" width="50px"></a>
+            <a href=""><img class="m-4" src="./assets/instagram.png" width="50px"></a>
+        </div>
+
+
+    </div>
+
+    <div id="dimScreen" class="d-none">
+        <div id="warningName" class="d-none bg-white text-center flex-column justify-content-center">
+            <h1>You need to fill the input!</h1>
+
+
+            <button id="okBtn" class="rounded ml-auto m-auto">OK!</button>
+        </div>
+    </div>
+    
+    <div id="admDiv">
+        <form action="./adm.html"><button id="admBtn" class="rounded p-2">ADMIN</button></form>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./firebase.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
